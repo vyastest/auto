@@ -1,11 +1,11 @@
 import streamlit as st
 
 # Sample list of suggestions
-suggestions = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape', 'honeydew']
+suggestions = ['virat kohli', 'ab de villiers', 'sachin tendulkar', 'yuvraj singh', 'dhoni ms']
 
 def autocomplete_input(suggestions):
     # Text input widget with autocomplete
-    user_input = st.text_input("Type a fruit:", "")
+    user_input = st.text_input("Type a name:", "")
 
     # Filter suggestions based on user input
     filtered_suggestions = [sugg for sugg in suggestions if user_input.lower() in sugg.lower()]
